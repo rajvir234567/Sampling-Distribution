@@ -6,9 +6,10 @@ import random
 
 df = pd.read_csv("medium_data.csv")
 
-average_list = df["average"].tolist()
-mean = stat.mean(df["average"].tolist())
-s = stat.stdev(df["average"].tolist())
+average_list = df["reading_time"].tolist()
+print(df.columns)
+mean = stat.mean(df["reading_time"].tolist())
+s = stat.stdev(df["reading_time"].tolist())
 print(mean)
 print(s)
 
